@@ -1,16 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import MyFirstComponent from './components/myFirstComponent';
 
-function App() {
-
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello World</h1>
-        <p>This is my first exeprience with React</p>
-      </header>
+    <div>
+      <MyFirstComponent />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
