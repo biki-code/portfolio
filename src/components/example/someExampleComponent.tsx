@@ -1,9 +1,7 @@
-import React from 'react'
-import styles from './someExampleComponent.module.scss'
+import React from "react";
+import styles from "./someExampleComponent.module.scss";
 
-type SomeExampleComponentProps = {
-
-}
+type SomeExampleComponentProps = {};
 
 const SomeExampleComponent: React.FC<SomeExampleComponentProps> = () => {
   return (
@@ -11,7 +9,7 @@ const SomeExampleComponent: React.FC<SomeExampleComponentProps> = () => {
       <h1>Header</h1>
       <p>My supercool component</p>
     </div>
-  )
-}
+  );
+};
 
-export default SomeExampleComponent
+export default SomeExampleComponent;

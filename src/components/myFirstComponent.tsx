@@ -1,8 +1,6 @@
-import React from 'react'
+import React from "react";
 
-type MyFirstComponentProps = {
-
-}
+type MyFirstComponentProps = {};
 
 const MyFirstComponent: React.FC<MyFirstComponentProps> = () => {
   return (
@@ -11,7 +9,7 @@ const MyFirstComponent: React.FC<MyFirstComponentProps> = () => {
       <p>This is my first component</p>
       <p> happy Thursday 😎</p>
     </div>
-  )
-}
+  );
+};
 
-export default MyFirstComponent
+export default MyFirstComponent;
