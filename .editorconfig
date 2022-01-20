@@ -13,7 +13,7 @@ trim_trailing_whitespace = false
 insert_final_newline = false
 
 # Use 2 spaces for the HTML files
-[{*.html,*.tsx,*.ts,*.js,*.jsx,*.json,*.yml,*.yaml}]
+[{*.html,*.tsx,*.ts,*.js,*.jsx,*.json,*.yml,*.yaml,*.scss}]
 indent_size = 2
 
 # The JSON files contain newlines inconsistently

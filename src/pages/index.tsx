@@ -5,9 +5,9 @@ type IndexProps = {};
 
 const Index: React.FC<IndexProps> = () => {
   return (
-    <div>
+    <>
       <HeaderComponent />
-    </div>
+    </>
   );
 };
 

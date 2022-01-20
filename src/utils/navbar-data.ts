@@ -15,4 +15,9 @@ export const NAV_DATA: navbarDataTypes = [
     title: "Projects",
     linkTo: "/projects",
   },
+  {
+    key: 2,
+    title: "CV",
+    linkTo: "/cv",
+  },
 ];

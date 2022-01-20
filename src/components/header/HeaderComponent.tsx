@@ -1,13 +1,14 @@
 import { NAV_DATA } from "../../utils/navbar-data";
+import styles from "./HeaderComponent.module.scss"
 
 type HeaderComponentProps = {};
 
 const HeaderComponent: React.FC<HeaderComponentProps> = () => {
   return (
     <>
-      <header>
+      <header className={styles.container}>
         <nav>
-          <span>
+          <span className={styles.navbar}>
             {NAV_DATA.map(({ key, title, linkTo }) => {
               return (
                 <a key={key} href={linkTo}>
