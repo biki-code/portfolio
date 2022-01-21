@@ -7,7 +7,7 @@ type navbarDataTypes = {
 export const NAV_DATA: navbarDataTypes = [
   {
     key: 0,
-    title: "Homepage",
+    title: "Home",
     linkTo: "/",
   },
   {
