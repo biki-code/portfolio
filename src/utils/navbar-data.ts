@@ -1,10 +1,6 @@
-type navbarDataTypes = {
-  key: number;
-  title: string;
-  linkTo: string;
-}[];
+import { NavbarItemType } from "./types";
 
-export const NAV_DATA: navbarDataTypes = [
+export const NAV_DATA: NavbarItemType[] = [
   {
     key: 0,
     title: "Home",

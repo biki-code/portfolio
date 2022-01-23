@@ -1,12 +1,14 @@
 import React from "react";
 import HeaderComponent from "../components/header/HeaderComponent";
 
-type IndexProps = {};
+type IndexProps = {
+  toggleTheme: () => void;
+};
 
-const Index: React.FC<IndexProps> = () => {
+const Index: React.FC<IndexProps> = ({ toggleTheme }) => {
   return (
     <>
-      <HeaderComponent />
+      <HeaderComponent toggleTheme={toggleTheme} />
     </>
   );
 };

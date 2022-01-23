@@ -1,22 +1,23 @@
 import { NAV_DATA } from "../../utils/navbar-data";
 import styles from "./HeaderComponent.module.scss";
+import NavItemComponent from "./navitem/NavItemComponent";
+import ThemeToggleComponent from "./theme-toggle/ThemeToggleComponent";
 
-type HeaderComponentProps = {};
+type HeaderComponentProps = {
+  toggleTheme: () => void;
+};
 
-const HeaderComponent: React.FC<HeaderComponentProps> = () => {
+const HeaderComponent: React.FC<HeaderComponentProps> = ({ toggleTheme }) => {
   return (
     <>
       <header className={styles.header}>
         <nav>
           <span>
-            {NAV_DATA.map(({ key, title, linkTo }) => {
-              return (
-                <a key={key} href={linkTo}>
-                  <span>{title}</span>
-                </a>
-              );
-            })}
+            {NAV_DATA.map(({ key, title, linkTo }) => (
+              <NavItemComponent key={key} title={title} linkTo={linkTo} />
+            ))}
           </span>
+          <ThemeToggleComponent toggleTheme={toggleTheme}/>
         </nav>
       </header>
     </>
