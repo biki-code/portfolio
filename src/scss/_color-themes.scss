@@ -1,10 +1,5 @@
 @use "variables" as *;
 
-$bg: 'bg';
-$text: 'text';
-$link: 'link';
-$hover: 'hover';
-
 $themes: (
   light: (
     bg: $bg--light,
@@ -19,22 +14,3 @@ $themes: (
     hover: $hover--dark,
   ),
 );
-
-@mixin themed() {
-  @each $theme, $map in $themes {
-    .theme--#{$theme} {
-      $theme-map: () !global;
-      @each $key, $submap in $map {
-        $value: map-get(map-get($themes, $theme), '#{$key}');
-        // prettier-ignore
-        $theme-map: map-merge($theme-map, ($key: $value)) !global;
-      }
-      @content;
-      $theme-map: null !global;
-    }
-  }
-}
-
-@function t($key) {
-  @return map-get($theme-map, $key);
-}

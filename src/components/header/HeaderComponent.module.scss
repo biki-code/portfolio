@@ -1,6 +1,5 @@
 @use "../../scss/variables" as *;
 @use "../../scss/extends";
-@use "../../scss/color-themes" as *;
 
 .header {
   height: $header--height;
@@ -9,10 +8,7 @@
   left: 0;
   right: 0;
   box-shadow: 0 1px 1px #0000001a;
-
-  @include themed() {
-    background-color: t($bg);
-  }
+  background-color: var(--background);
 
   nav {
     @extend %container;

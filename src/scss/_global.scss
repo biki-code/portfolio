@@ -1,6 +1,8 @@
 @use "color-themes" as *;
 @use "variables" as *;
 
+$bg: var(--background);
+
 html,
 body {
   box-sizing: border-box;
@@ -13,11 +15,7 @@ body {
   height: 100vh;
   min-height: 100%;
   font-family: "Encode Sans Expanded", sans-serif;
-
-  @include themed() {
-    background-color: t($bg);
-    color: t($text);
-  }
+  background-color: $bg;
 }
 
 html {

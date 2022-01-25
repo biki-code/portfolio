@@ -6,8 +6,6 @@ import { useDarkMode } from "./utils/useDarkMode";
 const App: React.FC = () => {
   const [theme, toggleTheme] = useDarkMode();
 
-  document.body.className = `theme--${theme}`  // remove and use the solution below
-
   document.documentElement.setAttribute("data-color-theme", theme);
 
   return (
