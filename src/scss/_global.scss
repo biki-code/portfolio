@@ -1,4 +1,5 @@
 @use "color-themes" as *;
+@use "variables" as *;
 
 html,
 body {
@@ -11,6 +12,7 @@ body {
   scroll-behavior: smooth;
   height: 100vh;
   min-height: 100%;
+  font-family: "Encode Sans Expanded", sans-serif;
 
   @include themed() {
     background-color: t($bg);
@@ -21,4 +23,19 @@ body {
 html {
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+:root,
+[data-color-theme="light"] {
+  --background: #{$bg--light};
+  --text-primary: black;
+  --text-secondary: royalblue;
+  --accent: purple;
+}
+
+[data-color-theme="dark"] {
+  --background: black;
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
 }

@@ -1,11 +1,10 @@
 import { useState } from "react";
 
 export const useDarkMode = (): [string, () => void] => {
-  const localTheme = window.localStorage.getItem("theme")
-    ? (window.localStorage.getItem("theme") as string)
-    : window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light";
+  const defaultDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const themePreference = window.localStorage.getItem("theme");
+
+  const localTheme = themePreference ? themePreference : defaultDark ? "dark" : "light";
 
   const [theme, setTheme] = useState<string>(localTheme);
 
