@@ -2,22 +2,22 @@ import { NAV_DATA } from "../../utils/navbar-data";
 import styles from "./HeaderComponent.module.scss";
 import NavItemComponent from "./navitem/NavItemComponent";
 import ThemeToggleComponent from "./theme-toggle/ThemeToggleComponent";
+import Logo from "./logo/LogoComponent"
 
-type HeaderComponentProps = {
-  toggleTheme: () => void;
-};
+type HeaderComponentProps = {};
 
-const HeaderComponent: React.FC<HeaderComponentProps> = ({ toggleTheme }) => {
+const HeaderComponent: React.FC<HeaderComponentProps> = () => {
   return (
     <>
       <header className={styles.header}>
         <nav>
+          <Logo />
           <span>
             {NAV_DATA.map(({ key, title, linkTo }) => (
               <NavItemComponent key={key} title={title} linkTo={linkTo} />
             ))}
           </span>
-          <ThemeToggleComponent toggleTheme={toggleTheme}/>
+          <ThemeToggleComponent />
         </nav>
       </header>
     </>

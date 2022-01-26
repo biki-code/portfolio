@@ -1,17 +1,22 @@
 import React from "react";
+import { useThemeContext } from "../../../contexts/ThemeProvider";
 import styles from "./ThemeToggleComponent.module.scss";
 
-type ThemeToggleComponentProps = {
-  toggleTheme: () => void;
-};
+type ThemeToggleComponentProps = {};
 
-const ThemeToggleComponent: React.FC<ThemeToggleComponentProps> = ({ toggleTheme }) => {
-  const dark = true
+const ThemeToggleComponent: React.FC<ThemeToggleComponentProps> = () => {
+  const { theme, toggleTheme } = useThemeContext();
+
+  const getClassNames = () => {
+    if (theme === "dark") return `${styles["toggle-inner"]} ${styles["toggle-active"]}`;
+    return styles["toggle-inner"];
+  };
+
   return (
     <>
-      <span className={styles.toggle}>
-        <span className={`${styles["toggle-inner"]} ${dark && styles["toggle-active"]}`} onClick={toggleTheme}></span>
-      </span>
+      <div className={styles.toggle} onClick={toggleTheme}>
+        <span className={getClassNames()}></span>
+      </div>
     </>
   );
 };

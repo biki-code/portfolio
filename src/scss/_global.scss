@@ -1,7 +1,5 @@
 @use "color-themes" as *;
-@use "variables" as *;
-
-$bg: var(--background);
+@use "mixins" as *;
 
 html,
 body {
@@ -9,31 +7,35 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
-  padding: 0;
-  font-family: Lato;
+  padding: 0; 
   scroll-behavior: smooth;
   height: 100vh;
   min-height: 100%;
   font-family: "Encode Sans Expanded", sans-serif;
-  background-color: $bg;
+
+  background-color: var(--background);
+  color: var(--text-primary);
+  @include theme-transition(color, background-color);
 }
 
-html {
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-:root,
 [data-color-theme="light"] {
   --background: #{$bg--light};
-  --text-primary: black;
-  --text-secondary: royalblue;
-  --accent: purple;
+  --text-primary: #{$text--light};
+  --link-color: #{$link--light};
+  --hover-color: #{$hover--light};
+  --nav-link-color: #{$nav-link--light};
+  --hero-intro-color: #{$hero-intro--light};
 }
 
 [data-color-theme="dark"] {
-  --background: black;
-  --text-primary: white;
-  --text-secondary: grey;
-  --accent: darkred;
+  --background: #{$bg--dark};
+  --text-primary: #{$text--dark};
+  --link-color: #{$link--dark};
+  --hover-color: #{$hover--dark};
+  --nav-link-color: #{$nav-link--dark};
+  --hero-intro-color: #{$hero-intro--dark};
+}
+
+:root {
+  --toggle-color: var(--text-primary);
 }

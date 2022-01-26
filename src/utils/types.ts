@@ -3,3 +3,8 @@ export type NavbarItemType = {
   title: string;
   linkTo: string;
 };
+
+export type ThemeContextType = {
+  theme: string;
+  toggleTheme?: () => void;
+};

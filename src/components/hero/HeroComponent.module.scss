@@ -1,0 +1,7 @@
+@use "../../scss/extends";
+
+.hero {
+  @extend %container;
+  padding-top: 2em;
+  color: var(--hero-intro-color);
+}

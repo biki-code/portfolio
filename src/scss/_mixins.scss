@@ -1,0 +1,13 @@
+@mixin theme-transition($props...) {
+  $result: ();
+
+  @each $prop in $props {
+    $result: append($result, #{$prop} 0.2s ease-in, comma);
+  }
+
+  -webkit-transition: $result;
+  -moz-transition: $result;
+  -ms-transition: $result;
+  -o-transition: $result;
+  transition: $result;
+}

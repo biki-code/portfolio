@@ -1,5 +1,6 @@
 @use "../../scss/variables" as *;
 @use "../../scss/extends";
+@use "../../scss/mixins" as *;
 
 .header {
   height: $header--height;
@@ -9,6 +10,7 @@
   right: 0;
   box-shadow: 0 1px 1px #0000001a;
   background-color: var(--background);
+  @include theme-transition(background-color);
 
   nav {
     @extend %container;
@@ -19,6 +21,8 @@
 
     span {
       display: flex;
+      color: var(--nav-link-color);
+      @include theme-transition(color);
     }
   }
 }

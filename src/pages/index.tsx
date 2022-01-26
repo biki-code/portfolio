@@ -1,14 +1,14 @@
 import React from "react";
 import HeaderComponent from "../components/header/HeaderComponent";
+import HeroComponent from "../components/hero/HeroComponent";
 
-type IndexProps = {
-  toggleTheme: () => void;
-};
+type IndexProps = {};
 
-const Index: React.FC<IndexProps> = ({ toggleTheme }) => {
+const Index: React.FC<IndexProps> = () => {
   return (
     <>
-      <HeaderComponent toggleTheme={toggleTheme} />
+      <HeaderComponent />
+      <HeroComponent />
     </>
   );
 };

@@ -1,16 +1,17 @@
-@use "variables" as *;
+// light-mode
+$bg--light: #ffffff;
+$text--light: #1a202c;
+$link--light: #0000ff;
+$hover--light: #ffa500;
+$nav-link--light: #272b38;
+$nav-logo--light: #ca6d56;
+$hero-intro--light: #ca6d56;
 
-$themes: (
-  light: (
-    bg: $bg--light,
-    text: $text--light,
-    link: $link--blue--light,
-    hover: $hover--light,
-  ),
-  dark: (
-    bg: $bg--dark,
-    text: $text--dark,
-    link: $link--blue--dark,
-    hover: $hover--dark,
-  ),
-);
+// dark-mode
+$bg--dark: #1a202c;
+$text--dark: #ffffff;
+$link--dark: #b700ff;
+$hover--dark: #acdf6a;
+$nav-link--dark: #cac3bc;
+$nav-logo--dark: #ca6d56;
+$hero-intro--dark: #ca6d56;
