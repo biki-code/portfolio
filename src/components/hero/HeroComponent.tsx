@@ -6,7 +6,10 @@ type HeroComponentProps = {};
 const HeroComponent: React.FC<HeroComponentProps> = () => {
   return (
     <>
-      <div className={styles.hero}>HeroComponent</div>
+      <div className={styles.hero}>
+        {" "}
+        Bikiltu Terfa, Computer Programming student.
+      </div>
     </>
   );
 };
