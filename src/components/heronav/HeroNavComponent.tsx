@@ -8,8 +8,8 @@ const HeroNavComponent: React.FC<HeroNavComponentProps> = () => {
     <>
       <div className={styles.heronav}>
         <div>
-          <LinkButtonComponent name={"About me"} linkTo={"#about"} inverted={false} />
-          <LinkButtonComponent name={"Projects"} linkTo={"#projects"} inverted={true} />
+          <LinkButtonComponent name={"About me"} linkTo={"/about"} inverted={false} />
+          <LinkButtonComponent name={"Projects"} linkTo={"/projects"} inverted={true} />
         </div>
 
         {/* <div className={styles.github}>

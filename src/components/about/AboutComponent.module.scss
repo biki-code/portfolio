@@ -1,0 +1,14 @@
+@use "../../scss/extends";
+@use "../../scss/variables" as *;
+
+.about {
+  @extend %container;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - (3 * $header--height));
+  }
+}
