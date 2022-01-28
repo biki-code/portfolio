@@ -1,7 +1,25 @@
 @use "../../scss/extends";
+@use "../../scss/variables" as *;
 
 .hero {
   @extend %container;
-  padding-top: 2em;
-  color: var(--hero-intro-color);
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - (3 * $header--height));
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1.7;
+      margin: 0 0 1.45rem;
+
+      .emphasized {
+        color: var(--hero-intro-color);
+      }
+    }
+  }
 }

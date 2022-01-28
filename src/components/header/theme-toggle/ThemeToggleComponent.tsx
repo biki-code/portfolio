@@ -15,6 +15,7 @@ const ThemeToggleComponent: React.FC<ThemeToggleComponentProps> = () => {
   return (
     <>
       <div className={styles.toggle} onClick={toggleTheme}>
+        {/* <span>{theme === "dark" ? "dk" : "lk"}</span> */}
         <span className={getClassNames()}></span>
       </div>
     </>

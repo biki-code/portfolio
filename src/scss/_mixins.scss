@@ -2,7 +2,7 @@
   $result: ();
 
   @each $prop in $props {
-    $result: append($result, #{$prop} 0.2s ease-in, comma);
+    $result: append($result, #{$prop} 0.2s ease 0s, comma);
   }
 
   -webkit-transition: $result;

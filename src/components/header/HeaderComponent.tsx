@@ -1,8 +1,8 @@
-import { NAV_DATA } from "../../utils/navbar-data";
+// import { NAV_DATA } from "../../utils/navbar-data";
 import styles from "./HeaderComponent.module.scss";
-import NavItemComponent from "./navitem/NavItemComponent";
+// import NavItemComponent from "./navitem/NavItemComponent";
 import ThemeToggleComponent from "./theme-toggle/ThemeToggleComponent";
-import Logo from "./logo/LogoComponent"
+import Logo from "./logo/LogoComponent";
 
 type HeaderComponentProps = {};
 
@@ -12,11 +12,11 @@ const HeaderComponent: React.FC<HeaderComponentProps> = () => {
       <header className={styles.header}>
         <nav>
           <Logo />
-          <span>
+          {/* <span>
             {NAV_DATA.map(({ key, title, linkTo }) => (
               <NavItemComponent key={key} title={title} linkTo={linkTo} />
             ))}
-          </span>
+          </span> */}
           <ThemeToggleComponent />
         </nav>
       </header>

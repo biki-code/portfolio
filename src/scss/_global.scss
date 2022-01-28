@@ -7,15 +7,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
-  padding: 0; 
+  padding: 0;
   scroll-behavior: smooth;
   height: 100vh;
   min-height: 100%;
   font-family: "Encode Sans Expanded", sans-serif;
+  text-rendering: optimizeLegibility;
 
   background-color: var(--background);
   color: var(--text-primary);
-  @include theme-transition(color, background-color);
+  // @include theme-transition(color, background-color);
+}
+
+html {
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 [data-color-theme="light"] {
@@ -37,5 +43,11 @@ body {
 }
 
 :root {
-  --toggle-color: var(--text-primary);
+  --background-invert: var(--text-primary);
+  --color-invert: var(--background);
+}
+
+::selection {
+  background-color: var(--text-primary);
+  color: var(--background);
 }

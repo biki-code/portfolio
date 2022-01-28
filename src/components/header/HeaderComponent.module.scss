@@ -10,7 +10,7 @@
   right: 0;
   box-shadow: 0 1px 1px #0000001a;
   background-color: var(--background);
-  @include theme-transition(background-color);
+  // @include theme-transition(background-color);
 
   nav {
     @extend %container;
@@ -22,7 +22,7 @@
     span {
       display: flex;
       color: var(--nav-link-color);
-      @include theme-transition(color);
+      // @include theme-transition(color);
     }
   }
 }
