@@ -8,7 +8,7 @@ const HeroNavComponent: React.FC<HeroNavComponentProps> = () => {
     <>
       <div className={styles.heronav}>
         <div>
-          <LinkButtonComponent name={"About me"} linkTo={"/about"} inverted={false} />
+          <LinkButtonComponent name={"About me"} linkTo={"/about"} />
           <LinkButtonComponent name={"Projects"} linkTo={"/projects"} inverted={true} />
         </div>
 

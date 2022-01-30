@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import styles from "./NavItemComponent.module.scss";
 
 type NavItemComponentProps = {
@@ -9,9 +10,9 @@ type NavItemComponentProps = {
 const NavItemComponent: React.FC<NavItemComponentProps> = ({ title, linkTo }) => {
   return (
     <>
-      <a className={styles.navlink} href={linkTo}>
+      <NavLink className={styles.navlink} to={linkTo}>
         <span>{title}</span>
-      </a>
+      </NavLink>
     </>
   );
 };

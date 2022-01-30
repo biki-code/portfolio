@@ -2,7 +2,7 @@ import "./scss/_global.scss";
 import Homepage from "./pages";
 import About from "./pages/about";
 import Projects from "./pages/projects";
-import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
+import { Switch, Route, HashRouter as Router } from "react-router-dom";
 import { useThemeContext } from "./contexts/ThemeProvider";
 
 const App: React.FC = () => {
@@ -12,7 +12,7 @@ const App: React.FC = () => {
   document.documentElement.setAttribute("data-color-theme", theme);
 
   return (
-    <Router basename="/portfolio">
+    <Router>
       <Switch>
         <Route exact path="/" component={Homepage} />
         <Route exact path="/about" component={About} />

@@ -1,13 +1,14 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import styles from "./LogoComponent.module.scss";
 
 type LogoComponentProps = {};
 
 const LogoComponent: React.FC<LogoComponentProps> = () => {
   return (
-    <a className={styles.logo} href="/">
+    <NavLink className={styles.logo} to="/">
       <span>BikiCode</span>
-    </a>
+    </NavLink>
   );
 };
 

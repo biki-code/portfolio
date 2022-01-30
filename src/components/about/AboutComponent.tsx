@@ -14,4 +14,3 @@ const AboutComponent: React.FC<AboutComponentProps> = () => {
 };
 
 export default AboutComponent;
-  
