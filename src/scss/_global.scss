@@ -45,6 +45,7 @@ html {
 :root {
   --background-invert: var(--text-primary);
   --color-invert: var(--background);
+  --title-color: var(--hero-intro-color)
 }
 
 ::selection {
