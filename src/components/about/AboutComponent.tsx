@@ -9,7 +9,7 @@ const AboutComponent: React.FC<AboutComponentProps> = () => {
       <main className={styles.about}>
         <div className={styles.flex33}>
           <section>
-            <h1>Summary</h1>
+            <h1>  Personal Data</h1>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere cumque voluptatum repellat blanditiis
               quis quo omnis obcaecati ex delectus id? At laudantium quod vel debitis porro ratione ipsa harum tenetur?
