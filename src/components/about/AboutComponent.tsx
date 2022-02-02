@@ -44,7 +44,7 @@ const AboutComponent: React.FC<AboutComponentProps> = () => {
             <h1>Work Experience</h1>
             <p>
               - Teaching in PanAfrica Distance Education for 1 year in Ethiopia {'   '}
-              -Opertion superviser in Ayka Addis
+              -Operation superviser in Ayka Addis
               Textile factory - B2b sales person in Dubai mall for short period - Class asistant at Ilola, vantaa school
               - Sales person in Helsinki outlet in Polarn O.pyret shop as intern
               - Also, I was model for Paula Vesala music video and actress for finnish tv series. examples: Karkurit, Omerta 6/12,
