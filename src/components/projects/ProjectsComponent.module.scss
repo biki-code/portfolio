@@ -1,0 +1,17 @@
+@mixin listStyle {
+  list-style: none;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.list1 {
+  @include listStyle();
+  color: #000;
+  background: #fff;
+}
+
+.list2 {
+  @include listStyle();
+  color: #fff;
+  background: #000;
+}

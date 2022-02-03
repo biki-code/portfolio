@@ -1,7 +1,7 @@
 @use "../../scss/extends";
 @use "../../scss/variables" as *;
 
-.about {
+.section {
   @extend %container;
   display: flex;
   flex-direction: row;
@@ -36,6 +36,25 @@
     h1 {
       margin-top: 1rem;
       color: var(--title-color);
+    }
+
+    p {
+      span {
+        display: block;
+      }
+
+      span::before {
+        content: "🚀 ";
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--link-color);
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
     border-top: 0.05rem solid var(--text-primary);
