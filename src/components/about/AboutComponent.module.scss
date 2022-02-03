@@ -10,21 +10,17 @@
     flex: 0 0 calc(100% / 3);
     max-width: calc(100% / 3);
     padding-right: 2rem;
-    justify-content: space-between;
-    
   }
 
   .flex66 {
     flex: 0 0 calc(100% / 1.5);
     max-width: calc(100% / 1.5);
     padding-left: 2rem;
-    justify-content: space-between;
   }
 
   .flex33,
   .flex66 {
     margin-top: calc($header--height/2);
-    justify-content: space-between;
   }
 
   @media screen and (max-width: 576px) {
@@ -34,7 +30,6 @@
     .flex66 {
       max-width: 100%;
       padding: unset;
-      justify-content: space-between;
     }
   }
 
@@ -42,12 +37,10 @@
     h1 {
       margin-top: 1rem;
       color: var(--title-color);
-      justify-content: space-between;
     }
 
     border-top: 0.05rem solid var(--text-primary);
     height: max-content;
     margin-bottom: 2rem;
-    justify-content: space-between;
   }
 }
