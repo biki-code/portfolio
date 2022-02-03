@@ -5,22 +5,21 @@
   @extend %container;
   display: flex;
   flex-direction: row;
+  column-gap: 4rem;
 
   .flex33 {
-    flex: 0 0 calc(100% / 3);
+    flex: 0 1 calc(100% / 3);
     max-width: calc(100% / 3);
-    padding-right: 2rem;
   }
 
   .flex66 {
-    flex: 0 0 calc(100% / 1.5);
+    flex: 0 1 calc(100% / 1.5);
     max-width: calc(100% / 1.5);
-    padding-left: 2rem;
   }
 
   .flex33,
   .flex66 {
-    margin-top: calc($header--height/2);
+    margin-top: calc($header--height / 2);
   }
 
   @media screen and (max-width: 576px) {
