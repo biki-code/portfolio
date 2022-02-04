@@ -6,9 +6,9 @@ const ProjectsComponent: React.FC<ProjectsComponentProps> = () => {
   return(
   <div>
   <ul className={styles.list1}>
-    <li>Wolf adventure game- group project</li>
-    <li>Role play game</li>
-    <li>Unit WebGl</li>
+    <li>vv</li>
+    <li>vv</li>
+    <li>vv</li>
   </ul>
 
   <ul className={styles.list2}>

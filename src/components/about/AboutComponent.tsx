@@ -19,12 +19,11 @@ const AboutComponent: React.FC<AboutComponentProps> = () => {
           <section>
             <h1>Contact</h1>
             <p>
-              <span>Birthday: 15.04.199x</span>
               <span>
                 Email: <a href="mailto:bikiltu.beyene@outlook.com">bikiltu.beyene@outlook.com</a>
               </span>
-              <span>Phone number: +358449768258</span>
-              <span>Address: Viisukuja 2, 01390 Vantaa</span>
+              <span>Phone number: +3584</span>
+              <span>Address: V 2, 01390 Vantaa</span>
             </p>
           </section>
           <section>
