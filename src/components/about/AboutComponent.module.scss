@@ -1,11 +1,12 @@
 @use "../../scss/extends";
 @use "../../scss/variables" as *;
 
-.section {
+.main {
   @extend %container;
   display: flex;
   flex-direction: row;
   column-gap: 4rem;
+  font-size: 0.80rem;
 
   .flex33 {
     flex: 0 1 calc(100% / 3);
@@ -22,7 +23,7 @@
     margin-top: calc($header--height / 2);
   }
 
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 992px) {
     flex-direction: column;
 
     .flex33,

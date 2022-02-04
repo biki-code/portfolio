@@ -1,23 +1,39 @@
 import React from "react";
-import styles from "./ProjectsComponent.module.scss"
+import styles from "./ProjectsComponent.module.scss";
+
 type ProjectsComponentProps = {};
 
-const ProjectsComponent: React.FC<ProjectsComponentProps> = () => {
-  return(
-  <div>
-  <ul className={styles.list1}>
-    <li>vv</li>
-    <li>vv</li>
-    <li>vv</li>
-  </ul>
+type PROJECTSInterface = {
+  key: number;
+  linkTo: string;
+  projectName: string
+}[];
 
-  <ul className={styles.list2}>
-    <li>List-item 1</li>
-    <li>List-item 2</li>
-    <li>List-item 3</li>
-  </ul>
-</div>
-  )
+const PROJECTS: PROJECTSInterface = [
+  {
+    key: 0,
+    linkTo: "https://github.com/varia-ict/varia-agile-20C-ryhma-1",
+    projectName: "Project1"
+  },
+  {
+    key: 1,
+    linkTo: "",
+    projectName: ""
+  },
+];
+
+const ProjectsComponent: React.FC<ProjectsComponentProps> = () => {
+  return (
+    <>
+      <main className={styles.main}>
+        <div>
+          {PROJECTS.map(({ key, linkTo, projectName }) => (
+            <a key={key} href={linkTo} target="_blank" rel="noreferrer">{projectName}</a>
+          ))}
+        </div>
+      </main>
+    </>
+  );
 };
 
 export default ProjectsComponent;

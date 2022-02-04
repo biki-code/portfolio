@@ -6,7 +6,7 @@ type AboutComponentProps = {};
 const AboutComponent: React.FC<AboutComponentProps> = () => {
   return (
     <>
-      <main className={styles.section}>
+      <main className={styles.main}>
         <div className={styles.flex33}>
           <section>
             <h1>Profile</h1>
@@ -31,11 +31,10 @@ const AboutComponent: React.FC<AboutComponentProps> = () => {
             <p>
               <h3>Languages</h3>
               <span>English - Good</span>
-              <span>Finnish - Intermediate</span>  
-              <span>Amharic - Native</span>  
+              <span>Finnish - Intermediate</span>
+              <span>Amharic - Native</span>
               <span>Russian - Beginner</span>
-              <h3>Web Tools</h3> Java, C#,
-              Html, Css,Typescript, Javascript, MySql,NoSql, Github
+              <h3>Web Tools</h3> Java, C#, Html, Css,Typescript, Javascript, MySql,NoSql, Github
             </p>
           </section>
         </div>
@@ -43,19 +42,23 @@ const AboutComponent: React.FC<AboutComponentProps> = () => {
           <section>
             <h1>Work Experience</h1>
             <p>
-              - Teaching in PanAfrica Distance Education for 1 year in Ethiopia {" "}
-              -Operation superviser in Ayka Addis Textile factory - B2b sales person in Dubai mall for short period -
-              Class asistant at Ilola, vantaa school - Sales person in Helsinki outlet in Polarn O.pyret shop as intern
-              - Also, I was model for Paula Vesala music video and actress for finnish tv series. examples: Karkurit,
-              Omerta 6/12
+              <span>Teaching in PanAfrica Distance Education for 1 year in Ethiopia</span>
+              <span>Operation superviser in Ayka Addis</span>
+              <span>Textile factory - B2b sales person in Dubai mall for short period</span>
+              <span>Class asistant at Ilola, vantaa school</span>
+              <span>Sales person in Helsinki outlet in Polarn O.pyret shop as intern</span>{" "}
+              <span>
+                Also, I was model for Paula Vesala music video and actress for finnish tv series. examples: Karkurit,
+                Omerta 6/12
+              </span>
             </p>
           </section>
           <section>
             <h1>Education</h1>
             <p>
-              - Asella Teachers college 2010-2013 Bachelor of Education - Vantaa Ammatiopisto Axell 2018 Finnish
-              language and culture - Vantaa Ammatiopisto Varia 2020 -2023 Information and Technology Specialization in
-              Programming
+              <span>Asella Teachers college 2010-2013 Bachelor of Education</span>{" "}
+              <span>Vantaa Ammatiopisto Axell 2018 Finnish language and culture</span>{" "}
+              <span>Vantaa Ammatiopisto Varia 2020 -2023 Information and Technology Specialization in Programming</span>
             </p>
           </section>
         </div>

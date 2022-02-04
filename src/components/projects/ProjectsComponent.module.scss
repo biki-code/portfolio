@@ -1,17 +1,13 @@
-@mixin listStyle {
-  list-style: none;
-  font-size: 18px;
-  font-weight: 900;
-}
+@use "../../scss/extends";
 
-.list1 {
-  @include listStyle();
-  color: #000;
-  background: #fff;
-}
+.main {
+  @extend %container;
+  display: flex;
+  flex-direction: row;
+  font-size: 0.8rem;
+  // margin-top: calc($header--height / 2);
 
-.list2 {
-  @include listStyle();
-  color: #fff;
-  background: #000;
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+  }
 }
