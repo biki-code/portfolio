@@ -18,8 +18,9 @@ const PROJECTS: PROJECTSInterface = [
   {
     key: 1,
     linkTo: "https://biki-code.github.io/portfolio/",
-    projectName: "React Portfolio"
+    projectName: "React Portfolio" 
   },
+ 
   {
     key: 2,
     linkTo: "",

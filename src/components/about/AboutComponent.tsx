@@ -20,10 +20,9 @@ const AboutComponent: React.FC<AboutComponentProps> = () => {
             <h1>Contact</h1>
             <p>
               <span>
-                Email: <a href="mailto:bikiltu.beyene@outlook.com">bikiltu.beyene@outlook.com</a>
+                Email:📧 <a href="mailto:bikiltu.beyene@outlook.com">bikiltu.beyene@outlook.com</a>
               </span>
-              <span>Phone number: +3584</span>
-              <span>Address: V 2, 01390 Vantaa</span>
+              <span>Address: 🏠Vantaa, Finland</span>
             </p>
           </section>
           <section>
