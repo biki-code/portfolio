@@ -13,12 +13,17 @@ const PROJECTS: PROJECTSInterface = [
   {
     key: 0,
     linkTo: "https://github.com/varia-ict/varia-agile-20C-ryhma-1",
-    projectName: "Project1"
+    projectName: "Wolf Adventure game - group project"
   },
   {
     key: 1,
+    linkTo: "https://biki-code.github.io/portfolio/",
+    projectName: "React Portfolio"
+  },
+  {
+    key: 2,
     linkTo: "",
-    projectName: ""
+    projectName: "Personal Unity game"
   },
 ];
 
