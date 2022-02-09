@@ -19,7 +19,7 @@ const AboutComponent: React.FC<AboutComponentProps> = () => {
           <section>
             <h1>Home location</h1>
             <p>
-              <span>🏠: Vantaa, Finland</span>
+              <p>🏠Vantaa, Finland</p>
             </p>
           </section>
           <section>
@@ -58,13 +58,11 @@ const AboutComponent: React.FC<AboutComponentProps> = () => {
             </p>
           </section>
           <footer>
-            <p>Have a question or a feedback? Contact me!</p>
+            <p>Contact information!</p>
             <p>
               <a href="https://www.linkedin.com/in/bikiltu-t-94960a1b6/" target="_blank" rel="noreferrer">
                 Linkedin
-              </a>
-            </p>
-            <p>
+              </a>{" "}
               📧 <a href="mailto:bikiltu.beyene@outlook.com">bikiltu.beyene@outlook.com</a>
             </p>
           </footer>
