@@ -17,12 +17,9 @@ const AboutComponent: React.FC<AboutComponentProps> = () => {
             </p>
           </section>
           <section>
-            <h1>Contact</h1>
+            <h1>Home location</h1>
             <p>
-              <span>
-                Email:📧 <a href="mailto:bikiltu.beyene@outlook.com">bikiltu.beyene@outlook.com</a>
-              </span>
-              <span>Address: 🏠Vantaa, Finland</span>
+              <span>🏠: Vantaa, Finland</span>
             </p>
           </section>
           <section>
@@ -42,10 +39,10 @@ const AboutComponent: React.FC<AboutComponentProps> = () => {
             <h1>Work Experience</h1>
             <p>
               <span>Teaching in PanAfrica Distance Education for 1 year in Ethiopia</span>
-              <span>Operation superviser in Ayka Addis</span>
-              <span>Textile factory - B2b sales person in Dubai mall for short period</span>
+              <span>Operation superviser in Ayka Addis Textile factory </span>
+              <span> B2b sales person in Dubai mall for short period</span>
               <span>Class asistant at Ilola, vantaa school</span>
-              <span>Sales person in Helsinki outlet in Polarn O.pyret shop as intern</span>{" "}
+              <span>Sales person in Helsinki outlet in Polarn O.pyret shop as intern</span>
               <span>
                 Also, I was model for Paula Vesala music video and actress for finnish tv series. examples: Karkurit,
                 Omerta 6/12
@@ -60,6 +57,17 @@ const AboutComponent: React.FC<AboutComponentProps> = () => {
               <span>Vantaa Ammatiopisto Varia 2020 -2023 Information and Technology Specialization in Programming</span>
             </p>
           </section>
+          <footer>
+            <p>Have a question or a feedback? Contact me!</p>
+            <p>
+              <a href="https://www.linkedin.com/in/bikiltu-t-94960a1b6/" target="_blank" rel="noreferrer">
+                Linkedin
+              </a>
+            </p>
+            <p>
+              📧 <a href="mailto:bikiltu.beyene@outlook.com">bikiltu.beyene@outlook.com</a>
+            </p>
+          </footer>
         </div>
       </main>
     </>
