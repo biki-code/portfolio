@@ -13,7 +13,8 @@ const PROJECTS: PROJECTSInterface = [
   {
     key: 0,
     linkTo: "https://github.com/varia-ict/varia-agile-20C-ryhma-1",
-    projectName: "Wolf Adventure game - group project"
+    projectName: "Wolf Adventure game - Group project"
+    
   },
   {
     key: 1,
@@ -23,9 +24,9 @@ const PROJECTS: PROJECTSInterface = [
  
   {
     key: 2,
-    linkTo: "",
-    projectName: "Personal Unity game"
-  },
+    linkTo: "https://play.unity.com/mg/other/my-personal-game",
+    projectName: "Personal Game"
+  }
 ];
 
 const ProjectsComponent: React.FC<ProjectsComponentProps> = () => {
@@ -34,12 +35,14 @@ const ProjectsComponent: React.FC<ProjectsComponentProps> = () => {
       <main className={styles.main}>
         <div>
           {PROJECTS.map(({ key, linkTo, projectName }) => (
-            <a key={key} href={linkTo} target="_blank" rel="noreferrer">{projectName}</a>
+            <a key={0} href={linkTo} target="_blank" rel="noreferrer">{projectName}</a>
+            
           ))}
         </div>
       </main>
     </>
   );
 };
+
 
 export default ProjectsComponent;
