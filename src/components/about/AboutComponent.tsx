@@ -30,7 +30,7 @@ const AboutComponent: React.FC<AboutComponentProps> = () => {
               <span>Finnish - Intermediate</span>
               <span>Amharic - Native</span>
               <span>Russian - Beginner</span>
-              <h3>Web Tools</h3> Java, C#, Html, Css,Typescript, Javascript, MySql,NoSql, Github
+              <h3>Web Tools</h3> Java, C#, Html, Css,Typescript, Javascript, React, MySql, NoSql, Git
             </p>
           </section>
         </div>
