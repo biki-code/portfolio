@@ -67,7 +67,11 @@
     padding: 2px;
     background-color: #ca6d56;
     color: var(--link-color);
-    
-    
+    margin-bottom: 2rem;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
   }
 }

@@ -1,25 +1,18 @@
 @use "../../scss/extends";
+@use "../../scss/variables" as *;
 
 .main {
   @extend %container;
   display: flex;
   flex-direction: row;
-  font-size:1.8rem;
-  // margin-top: calc($header--height / 2);
+  font-size: 1.8rem;
+  margin-top: calc($header--height / 2);
 
   @media screen and (max-width: 992px) {
     flex-direction: column;
   }
-  div{
-  border: 4px solid #000;
-  border-radius: 10px;
-  margin:auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: hsl(297, 31%, 75%);
-  width: 100%;
-  height: 250px;
-}
+
+  section {
+    width: 100%;
+  }
 }
