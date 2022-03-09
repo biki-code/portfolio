@@ -4,15 +4,25 @@
 .main {
   @extend %container;
   display: flex;
-  flex-direction: row;
   font-size: 1.8rem;
   margin-top: calc($header--height / 2);
 
-  @media screen and (max-width: 992px) {
-    flex-direction: column;
-  }
-
   section {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+
+      div {
+        width: 100%;
+      }
+    }
+
+    div {
+      width: 50%;
+    }
   }
 }

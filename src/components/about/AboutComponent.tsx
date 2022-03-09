@@ -63,7 +63,8 @@ const AboutComponent: React.FC<AboutComponentProps> = () => {
               <a href="https://www.linkedin.com/in/bikiltu-t-94960a1b6/" target="_blank" rel="noreferrer">
                 Linkedin
               </a>{" "}
-              📧 <a href="mailto:bikiltu.beyene@outlook.com">bikiltu.beyene@outlook.com</a>
+              📧 <a href="mailto:bikiltu.beyene@outlook.com" target="_blank" rel="noreferrer">bikiltu.beyene@outlook.com</a>{" "}
+              <a href="https://github.com/biki-code" target="_blank" rel="noreferrer">Github</a>
             </p>
           </footer>
         </div>

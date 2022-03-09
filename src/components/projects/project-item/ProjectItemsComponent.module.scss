@@ -1,13 +1,12 @@
 .project__body {
-  width: 100%;
   border: 2px solid var(--text-primary);
   padding: 0 15px;
   min-height: 1rem;
   margin-bottom: 2rem;
-  background-color: var(--background-invert);
+  border: .5rem solid var(--background-invert);
 
   a {
-    color: var(--color-invert);
+    color: var(--text-primary);
     text-decoration: none;
 
     &:hover {

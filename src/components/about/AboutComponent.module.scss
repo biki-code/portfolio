@@ -65,13 +65,17 @@
   footer {
     text-align:center;
     padding: 2px;
-    background-color: #ca6d56;
-    color: var(--link-color);
+    background: var(--background-invert);
+    color: var(--color-invert);
     margin-bottom: 2rem;
 
     a {
       text-decoration: none;
-      color: inherit;
+      color: var(--color-invert);
+
+      &:hover {
+        color: var(--link-color);
+      }
     }
   }
 }
