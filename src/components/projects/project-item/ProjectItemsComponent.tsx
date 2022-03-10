@@ -11,11 +11,9 @@ type ProjectItemsComponentProps = {
 const ProjectItemsComponent: React.FC<ProjectItemsComponentProps> = ({ project }) => {
   const { linkTo, projectName } = project;
   return (
-    <div className={styles.project__body}>
-      <a key={0} href={linkTo} target="_blank" rel="noreferrer">
-        {projectName}
-      </a>
-    </div>
+    <a className={styles.project__body} key={0} href={linkTo} target="_blank" rel="noreferrer">
+      <div>{projectName}</div>
+    </a>
   );
 };
 
