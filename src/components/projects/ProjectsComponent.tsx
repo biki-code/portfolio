@@ -15,13 +15,13 @@ const PROJECTS: PROJECTSInterface = [
     projectName: "Wolf Adventure game - Group project",
   },
   {
-    linkTo: "https://biki-code.github.io/portfolio/",
-    projectName: "React Portfolio",
+    linkTo: "https://biki-portfolio.web.app/about",
+    projectName: "React Portfolio website",
   },
 
   {
     linkTo: "https://play.unity.com/u/BikiTerfa",
-    projectName: "Personal Game",
+    projectName: "Unity Personal Games",
   },
 ];
 
