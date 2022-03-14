@@ -44,7 +44,7 @@ const AboutComponent: React.FC<AboutComponentProps> = () => {
               <span>Class asistant at Ilola, vantaa school</span>
               <span>Sales person in Helsinki outlet in Polarn O.pyret shop as intern</span>
               <span>
-                Also, I was model for Paula Vesala music video and actress for finnish tv series. examples: Karkurit,
+                Also, I was dancer for Paula Vesala music video and actress for finnish tv series. examples: Karkurit,
                 Omerta 6/12
               </span>
             </p>
