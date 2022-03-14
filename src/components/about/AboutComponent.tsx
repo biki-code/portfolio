@@ -30,7 +30,7 @@ const AboutComponent: React.FC<AboutComponentProps> = () => {
               <span>Finnish - Intermediate</span>
               <span>Amharic - Native</span>
               <span>Russian - Beginner</span>
-              <h3>Web Tools</h3> Java, C#, Html, Css,Typescript, Javascript, React, MySql, NoSql, Git
+              <h3>Web Tools</h3> Java, C#, Html, Css,Typescript, Javascript, React, MySql, NoSql, Git, Firebase
             </p>
           </section>
         </div>
@@ -63,8 +63,13 @@ const AboutComponent: React.FC<AboutComponentProps> = () => {
               <a href="https://www.linkedin.com/in/bikiltu-t-94960a1b6/" target="_blank" rel="noreferrer">
                 Linkedin
               </a>{" "}
-              📧 <a href="mailto:bikiltu.beyene@outlook.com" target="_blank" rel="noreferrer">bikiltu.beyene@outlook.com</a>{" "}
-              <a href="https://github.com/biki-code" target="_blank" rel="noreferrer">Github</a>
+              📧{" "}
+              <a href="mailto:bikiltu.beyene@outlook.com" target="_blank" rel="noreferrer">
+                bikiltu.beyene@outlook.com
+              </a>{" "}
+              <a href="https://github.com/biki-code" target="_blank" rel="noreferrer">
+                Github
+              </a>
             </p>
           </footer>
         </div>
