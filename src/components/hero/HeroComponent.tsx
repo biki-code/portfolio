@@ -12,7 +12,7 @@ const HeroComponent: React.FC<HeroComponentProps> = () => {
           <h1>
             <span style={{ color: "#9fa3ad" }}>Hello! Moi! ¡Hola! Bonjour! Привет!</span>
             &nbsp; I'm Biki, a <span className={styles.emphasized}>Software Developer</span> 👩🏾‍💻 currently working with
-            C#, SQL, NOSQL, React and Typescript
+            C# and Java
           </h1>
           <HeroNavComponent />
         </section>

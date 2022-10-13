@@ -43,6 +43,7 @@ const AboutComponent: React.FC<AboutComponentProps> = () => {
               <span> B2b sales person in Dubai mall for short period</span>
               <span>Class asistant at Ilola, vantaa school</span>
               <span>Sales person in Helsinki outlet in Polarn O.pyret shop as intern</span>
+              <span>Software developer in Crementum Oy </span>
             </p>
           </section>
           <section>
